@@ -21,7 +21,7 @@ export default function astify(literal) {
   case 'boolean':
     return t.booleanLiteral(literal);
   case 'undefined':
-    return t.unaryExpression('void', t.numberLiteral(0), true);
+    return t.unaryExpression('void', t.numericLiteral(0), true);
   default:
     if (Array.isArray(literal)) {
       return t.arrayExpression(literal.map(astify));
