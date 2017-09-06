@@ -1,6 +1,6 @@
 {
   "name": "babel-literal-to-ast",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "author": "Izaak Schroeder <izaak.schroeder@gmail.com>",
   "main": "index.js",
   "license": "CC0-1.0",
