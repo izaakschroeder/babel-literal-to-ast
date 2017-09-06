@@ -1,4 +1,3 @@
-
 import * as t from 'babel-types';
 import * as babylon from 'babylon';
 import traverse from 'babel-traverse';
@@ -27,10 +26,10 @@ export default function astify(literal) {
       return t.arrayExpression(literal.map(astify));
     }
     return t.objectExpression(Object.keys(literal)
-      .filter(k => {
+      .filter((k) => {
         return typeof literal[k] !== 'undefined';
       })
-      .map(k => {
+      .map((k) => {
         return t.objectProperty(
           t.stringLiteral(k),
           astify(literal[k])
