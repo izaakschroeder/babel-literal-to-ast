@@ -1,6 +1,6 @@
-import * as t from 'babel-types';
+import * as t from '@babel/types';
 import * as babylon from 'babylon';
-import traverse from 'babel-traverse';
+import traverse from '@babel/traverse';
 
 export default function astify(literal) {
   if (literal === null) {
