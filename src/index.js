@@ -1,5 +1,5 @@
 import * as t from '@babel/types';
-import * as babylon from 'babylon';
+import * as babylon from '@babel/parser';
 import traverse from '@babel/traverse';
 
 export default function astify(literal) {
